@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 80%;
+    min-height: 100dvh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .header{
+        width: 100%;
+        height: 150px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .headerDivUno{
+            width: 20%;
+            padding: 10px;
+            .formularioUno{
+                display: flex;
+                flex-direction: column;
+                >input{
+                    border-radius: 5px;
+                    border: 0.5px solid gray;
+                    margin: 3px;
+                    padding: 5px;
+                }
+            }
+        }
+        .headerDivDos{
+            width: 25%;
+            .formularioDos{
+                >input, >select{
+                    border-radius: 5px;
+                    border: 0.5px solid gray;
+                    margin: 3px;
+                    padding: 5px;
+                }
+            }
+        }
+        .headerDivTres{
+            width: 25%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 5px;
+        }
+        .imageneCarrito{
+            width: 15%;
+        }
+        .precioCarrito{
+            width: 50%;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .vaciarCarrito, .comprarCarrito{
+            width: 25%;
+            height: 55px;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .vaciarCarrito:hover{
+            background-color: rgba(187, 83, 65, 0.813);
+        }
+        .comprarCarrito:hover{
+            background-color: rgba(68, 230, 60, 0.813);
+        }
+    }
+    .main{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        gap: 10px;
+        .productos{
+            width: 15%;
+            height: 300px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border: 1px solid grey;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px grey;
+            text-align: center;
+            .imagenes{
+                width: 150px;
+                height: 75px;
+            }
+            >div{
+                >input, button{
+                    width: 45%;
+                    padding: 5px;
+                    font-size: 1rem;
+                    border-radius: 10px;
+                    text-align: center;
+                }
+                >button:hover{
+                    background-color: greenyellow;
+                }
+            }
+        }
+    }
+    .aside{
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .productosElegidos{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+            height: 125px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 0.5px solid grey;
+            .imagenesElegidas{
+                width: 50%;
+                height: 50px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
